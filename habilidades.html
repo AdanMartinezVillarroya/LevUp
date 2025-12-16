@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>LevUp · Habilidades</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html">LevUp</a>
+
+    <nav class="nav">
+      <a href="index.html">Inicio</a>
+      <a class="is-active" href="habilidades.html">Habilidades</a>
+      <a href="progreso.html">Progreso</a>
+
+      <div class="dropdown">
+        <button class="dropdown-btn" type="button">Más ▾</button>
+        <div class="dropdown-menu">
+          <a href="habilidades.html">Dominios</a>
+          <a href="progreso.html">Mi progreso</a>
+        </div>
+      </div>
+    </nav>
+
+    <div class="header-actions">
+      <a class="btn btn-ghost" href="#" id="btnUsuario">Usuario</a>
+      <a class="btn btn-primary" href="#" id="btnAbandonar">Abandonar</a>
+    </div>
+  </header>
+
+  <main>
+    <!-- BLOQUE 1: dominios -->
+    <section class="page-title">
+      <h1>Elige tu próximo dominio</h1>
+    </section>
+
+    <section class="domain-list">
+      <button class="domain-card" data-domain="programacion">
+        <h3>Programación</h3>
+        <p>Aprende lenguajes de código, desarrollo web y aplicaciones con ejercicios prácticos.</p>
+      </button>
+
+      <button class="domain-card" data-domain="comunicacion">
+        <h3>Comunicación</h3>
+        <p>Mejora tus habilidades de comunicación digital y estrategias de interacción profesional.</p>
+      </button>
+
+      <button class="domain-card" data-domain="marketing">
+        <h3>Marketing</h3>
+        <p>Domina estrategias de marketing digital, redes sociales y análisis de datos.</p>
+      </button>
+
+      <button class="domain-card" data-domain="creatividad">
+        <h3>Creatividad</h3>
+        <p>Desarrolla tu creatividad con herramientas de diseño y técnicas de innovación.</p>
+      </button>
+    </section>
+
+    <!-- BLOQUE 2: carrusel “¿Qué quieres aprender hoy?” -->
+    <section class="learn-today">
+      <div class="learn-today-head">
+        <div>
+          <h2>¿Qué quieres aprender hoy?</h2>
+          <p class="section-lead">Materiales esenciales para impulsar tu crecimiento</p>
+        </div>
+        <a class="btn btn-ghost" href="#" id="btnVerTodos">Ver todos</a>
+      </div>
+
+      <div class="carousel">
+        <button class="carousel-arrow" id="prevSlide" aria-label="Anterior">←</button>
+
+        <div class="carousel-track" id="carouselTrack" aria-label="Carrusel de cápsulas">
+          <!-- Se rellena por JS -->
+        </div>
+
+        <button class="carousel-arrow" id="nextSlide" aria-label="Siguiente">→</button>
+      </div>
+
+      <div class="carousel-dots" id="carouselDots" aria-label="Puntos de carrusel">
+        <!-- Se rellena por JS -->
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-bottom">
+      <strong>LevUp</strong>
+      <span>© <span id="year"></span> LevUp. Todos los derechos reservados</span>
+    </div>
+  </footer>
+
+  <script src="js/app.js"></script>
+  <script src="js/data.js"></script>
+  <script src="js/habilidades.js"></script>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>LevUp · Actividad</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html">LevUp</a>
+
+    <nav class="nav">
+      <a href="index.html">Inicio</a>
+      <a href="habilidades.html">Habilidades</a>
+      <a href="progreso.html">Progreso</a>
+    </nav>
+
+    <div class="header-actions">
+      <a class="btn btn-ghost" href="temarios.html">Volver</a>
+      <a class="btn btn-primary" href="progreso.html">Progreso</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="actividad-layout">
+      <div class="actividad-left">
+        <h1 id="actTitle">Ejemplo actividad</h1>
+        <p id="actEnunciado" class="section-lead">Enunciado actividad</p>
+
+        <div id="feedback" class="feedback" aria-live="polite"></div>
+
+        <div class="center">
+          <button class="btn btn-primary" id="btnValidar" type="button">Comprobar</button>
+          <a class="btn btn-ghost" href="progreso.html">Ver progreso</a>
+        </div>
+      </div>
+
+      <div class="actividad-right" id="answers">
+        <!-- Respuestas por JS -->
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-bottom">
+      <strong>LevUp</strong>
+      <span>© <span id="year"></span> LevUp. Todos los derechos reservados</span>
+    </div>
+  </footer>
+
+  <script src="js/app.js"></script>
+  <script src="js/data.js"></script>
+  <script src="js/actividad.js"></script>
+</body>
+</html>

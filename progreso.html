@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>LevUp · Progreso</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html">LevUp</a>
+
+    <nav class="nav">
+      <a href="index.html">Inicio</a>
+      <a href="habilidades.html">Habilidades</a>
+      <a class="is-active" href="progreso.html">Progreso</a>
+    </nav>
+
+    <div class="header-actions">
+      <a class="btn btn-ghost" href="habilidades.html">Volver</a>
+      <a class="btn btn-primary" href="habilidades.html">Continuar</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-title">
+      <h1>Tu camino de aprendizaje</h1>
+    </section>
+
+    <section class="progreso-layout">
+      <div class="progreso-visual">
+        <div class="ph-image"></div>
+      </div>
+
+      <div class="progreso-stats">
+        <div class="stat-card">
+          <p class="stat-title">Tiempo de estudio</p>
+          <p class="stat-value" id="studyMinutes">0</p>
+          <p class="small-note">Minutos dedicados al aprendizaje esta semana</p>
+        </div>
+
+        <div class="stat-card">
+          <p class="stat-title">Módulos completados</p>
+          <p class="stat-value" id="modulesDone">0</p>
+          <p class="small-note">Habilidades digitales desarrolladas hasta ahora</p>
+        </div>
+
+        <div class="stat-card">
+          <p class="stat-title">Racha de aprendizaje</p>
+          <p class="stat-value" id="streakDays">0</p>
+          <p class="small-note">Días consecutivos de práctica y mejora</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-bottom">
+      <strong>LevUp</strong>
+      <span>© <span id="year"></span> LevUp. Todos los derechos reservados</span>
+    </div>
+  </footer>
+
+  <script src="js/app.js"></script>
+  <script src="js/progreso.js"></script>
+</body>
+</html>
