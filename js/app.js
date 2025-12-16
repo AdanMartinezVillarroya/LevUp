@@ -1,14 +1,10 @@
-// ==============================
-// LevUp - JS base
-// ==============================
-
-// Actualiza el año del footer
+// Año dinámico en footer
 (() => {
     const yearEl = document.getElementById("year");
     if (yearEl) yearEl.textContent = new Date().getFullYear();
   })();
   
-  // Demo: evita envío real del formulario de suscripción
+  // Demo: suscripción sin envío real
   (() => {
     const form = document.querySelector(".subscribe");
     if (!form) return;

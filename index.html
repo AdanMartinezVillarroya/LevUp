@@ -4,155 +4,204 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>LevUp</title>
-  <meta name="description" content="LevUp: microaprendizaje adaptativo con IA." />
+  <meta name="description" content="Microlecciones inteligentes que se adaptan a tu ritmo." />
   <link rel="stylesheet" href="css/styles.css" />
 </head>
 
 <body>
-  <!-- Header -->
   <header class="site-header">
     <a class="brand" href="index.html">LevUp</a>
 
     <nav class="nav">
+      <a class="is-active" href="index.html">Inicio</a>
       <a href="habilidades.html">Habilidades</a>
-      <a href="#features">Cómo funciona</a>
-      <a href="#subscribe">Suscripción</a>
+      <a href="progreso.html">Progreso</a>
+
+      <div class="dropdown">
+        <button class="dropdown-btn" type="button" aria-haspopup="true" aria-expanded="false">
+          Más <span aria-hidden="true">▾</span>
+        </button>
+        <div class="dropdown-menu" role="menu">
+          <a role="menuitem" href="#features">Características</a>
+          <a role="menuitem" href="#limitless">Aprende sin límites</a>
+          <a role="menuitem" href="#subscribe">Suscripción</a>
+        </div>
+      </div>
     </nav>
 
     <div class="header-actions">
-      <a class="btn btn-ghost" href="registro.html">Registro</a>
-      <a class="btn btn-primary" href="iniciar-sesion.html">Iniciar sesión</a>
+      <a class="btn btn-ghost" href="iniciar-sesion.html">Entrar</a>
+      <a class="btn btn-primary" href="registro.html">Registro</a>
     </div>
   </header>
 
   <main>
-    <!-- Hero -->
+    <!-- HERO -->
     <section class="hero">
-      <div class="hero-content">
-        <h1>Transforma tu aprendizaje con inteligencia artificial</h1>
-        <p>
-          Microlecciones de 5–10 minutos, prácticas y adaptadas a tu ritmo.
-          Aprende sin fricción y con progreso visible.
-        </p>
+      <h1>Transforma tu aprendizaje<br/>con inteligencia artificial</h1>
 
-        <div class="hero-cta">
-          <a class="btn btn-primary" href="habilidades.html">Comenzar</a>
-          <a class="btn btn-ghost" href="habilidades.html">Explorar</a>
-        </div>
+      <p class="lead">
+        Microlecciones inteligentes que se adaptan a tu ritmo y estilo de aprendizaje.
+        Desarrolla habilidades digitales en minutos.
+      </p>
 
-        <div class="hero-badges">
-          <span class="badge">Microlecciones</span>
-          <span class="badge">Feedback inmediato</span>
-          <span class="badge">Progreso</span>
-        </div>
+      <div class="hero-cta">
+        <a class="btn btn-primary" href="habilidades.html">Comenzar</a>
+        <a class="btn btn-ghost" href="habilidades.html">Explorar</a>
       </div>
 
-      <div class="hero-visual" aria-label="Vista previa LevUp">
-        <div class="placeholder-card">
-          <p class="placeholder-title">Vista previa</p>
-          <p class="placeholder-text">
-            Aquí irá una imagen / mockup de tu diseño (opcional).
-          </p>
-        </div>
+      <div class="hero-image" aria-label="Imagen destacada (placeholder)">
+        <div class="ph-image"></div>
       </div>
     </section>
 
-    <!-- Sección: beneficios -->
+    <!-- CARACTERÍSTICAS (3 cards) -->
     <section class="section" id="features">
-      <h2>Aprendizaje breve, claro y aplicable</h2>
-      <p class="section-lead">
-        LevUp se basa en cápsulas cortas con ejercicios interactivos y retroalimentación inmediata.
-      </p>
+      <h2>Características que te impulsan</h2>
+      <p class="section-lead">Diseñado para adaptarse a tu ritmo de aprendizaje</p>
 
       <div class="grid-3">
         <article class="card">
-          <h3>Microlecciones 5–10 min</h3>
-          <p>Contenido breve y directo para encajar en tu rutina diaria sin saturación.</p>
+          <div class="card-media"></div>
+          <div class="card-body">
+            <h3>Microlecciones de 5-10 minutos</h3>
+            <p>Contenido conciso y enfocado para máxima retención.</p>
+            <a class="card-link" href="habilidades.html">Descubrir →</a>
+          </div>
         </article>
 
         <article class="card">
-          <h3>IA adaptativa</h3>
-          <p>Recomendaciones y ajuste de dificultad según tu rendimiento (en la demo, lógica simulada).</p>
+          <div class="card-media"></div>
+          <div class="card-body">
+            <h3>Habilidades profesionales relevantes</h3>
+            <p>Aprende competencias actuales del mercado laboral.</p>
+            <a class="card-link" href="habilidades.html">Explorar →</a>
+          </div>
         </article>
 
         <article class="card">
-          <h3>Progreso visible</h3>
-          <p>Puntos, racha y temarios completados para reforzar la constancia.</p>
+          <div class="card-media"></div>
+          <div class="card-body">
+            <h3>Aprendizaje adaptativo con inteligencia artificial</h3>
+            <p>Contenido personalizado según tu progreso y estilo.</p>
+            <a class="card-link" href="habilidades.html">Conocer más →</a>
+          </div>
         </article>
       </div>
     </section>
 
-    <!-- Sección: “cómo funciona” -->
-    <section class="section section-soft">
-      <h2>Cómo funciona LevUp</h2>
-
-      <ol class="steps">
-        <li>
-          <strong>Elige una habilidad</strong>
-          <span>Programación, comunicación, marketing o creatividad.</span>
-        </li>
-        <li>
-          <strong>Selecciona una cápsula</strong>
-          <span>Temas cortos organizados por módulos.</span>
-        </li>
-        <li>
-          <strong>Haz el ejercicio</strong>
-          <span>Responde y recibe feedback inmediato.</span>
-        </li>
-        <li>
-          <strong>Consulta tu progreso</strong>
-          <span>Visualiza tu avance y continúa donde lo dejaste.</span>
-        </li>
-      </ol>
-
-      <div class="center">
-        <a class="btn btn-primary" href="habilidades.html">Ir a habilidades</a>
-        <a class="btn btn-ghost" href="progreso.html">Ver progreso</a>
-      </div>
-    </section>
-
-    <!-- Suscripción -->
-    <section class="section" id="subscribe">
-      <h2>Suscripción</h2>
+    <!-- APRENDE SIN LÍMITES (2 cards anchas) -->
+    <section class="section" id="limitless">
+      <h2>Aprende sin límites</h2>
       <p class="section-lead">
-        Mantén el aprendizaje constante con nuevas cápsulas y rutas personalizadas.
+        Transforma tu potencial con una experiencia de aprendizaje revolucionaria
+      </p>
+
+      <div class="grid-2wide">
+        <article class="wide-card">
+          <div class="wide-card-text">
+            <h3>Aprende en cualquier momento y lugar</h3>
+            <p>Contenido accesible desde tu dispositivo móvil.</p>
+            <a class="card-link" href="habilidades.html">Ver más →</a>
+          </div>
+          <div class="wide-card-media"></div>
+        </article>
+
+        <article class="wide-card">
+          <div class="wide-card-text">
+            <h3>Rutas de aprendizaje únicas</h3>
+            <p>Contenido adaptado a tus objetivos y ritmo.</p>
+            <a class="card-link" href="habilidades.html">Explorar →</a>
+          </div>
+          <div class="wide-card-media"></div>
+        </article>
+      </div>
+    </section>
+
+    <!-- SUSCRIPCIÓN -->
+    <section class="section" id="subscribe">
+      <h2>Mantente actualizado con LevUp</h2>
+      <p class="section-lead">
+        Recibe las últimas novedades, consejos de aprendizaje y actualizaciones directamente en tu bandeja de entrada
       </p>
 
       <form class="subscribe" action="#" method="post">
-        <label class="sr-only" for="email">Email</label>
-        <input id="email" name="email" type="email" placeholder="Tu email" required />
-        <button class="btn btn-primary" type="submit">Suscribirme</button>
+        <input type="email" name="email" placeholder="Correo electrónico" required />
+        <button class="btn btn-primary" type="submit">Suscribirse</button>
       </form>
 
       <p class="small-note">
-        * En esta demo, el formulario es visual (sin envío real).
+        Al suscribirte, aceptas nuestros términos y condiciones de privacidad.
       </p>
+
+      <div class="subscribe-image" aria-label="Imagen suscripción (placeholder)">
+        <div class="ph-image"></div>
+      </div>
     </section>
   </main>
 
-  <!-- Footer -->
+  <!-- FOOTER (columnas como wireframe) -->
   <footer class="site-footer">
     <div class="footer-cols">
       <div>
         <p class="footer-title">LevUp</p>
-        <p class="small-note">Microaprendizaje adaptativo con enfoque práctico.</p>
+        <a href="index.html">Inicio</a><br/>
+        <a href="habilidades.html">Habilidades</a><br/>
+        <a href="#">Aprender</a><br/>
+        <a href="#">Recursos</a><br/>
+        <a href="#">Contacto</a>
       </div>
 
       <div>
-        <p class="footer-title">Navegación</p>
-        <a href="habilidades.html">Habilidades</a><br />
-        <a href="progreso.html">Progreso</a><br />
-        <a href="registro.html">Registro</a>
+        <p class="footer-title">Empresa</p>
+        <a href="#">Nosotros</a><br/>
+        <a href="#">Carreras</a><br/>
+        <a href="#">Prensa</a><br/>
+        <a href="#">Blog</a><br/>
+        <a href="#">Comunidad</a>
       </div>
 
       <div>
         <p class="footer-title">Soporte</p>
-        <a href="#">Contacto</a><br />
-        <a href="#">Privacidad</a>
+        <a href="#">Centro de ayuda</a><br/>
+        <a href="#">Estado</a><br/>
+        <a href="#">Changelog</a><br/>
+        <a href="#">Documentación</a><br/>
+        <a href="#">Guías</a>
+      </div>
+
+      <div>
+        <p class="footer-title">Legal</p>
+        <a href="#">Términos</a><br/>
+        <a href="#">Privacidad</a><br/>
+        <a href="#">Cookies</a><br/>
+        <a href="#">Licencia</a><br/>
+        <a href="#">Seguridad</a>
+      </div>
+
+      <div>
+        <p class="footer-title">Contacto</p>
+        <a href="#">Enviar mensaje</a><br/>
+        <a href="#">Soporte técnico</a><br/>
+        <a href="#">Preguntas frecuentes</a><br/>
+        <a href="#">Reportar problema</a><br/>
+        <a href="#">Sugerencias</a>
+      </div>
+
+      <div>
+        <p class="footer-title">Redes sociales</p>
+        <a href="#">Facebook</a><br/>
+        <a href="#">Twitter</a><br/>
+        <a href="#">Instagram</a><br/>
+        <a href="#">LinkedIn</a><br/>
+        <a href="#">YouTube</a>
       </div>
     </div>
 
-    <p class="small-note">© <span id="year"></span> LevUp</p>
+    <div class="footer-bottom">
+      <strong>LevUp</strong>
+      <span>© <span id="year"></span> LevUp. Todos los derechos reservados</span>
+    </div>
   </footer>
 
   <script src="js/app.js"></script>
