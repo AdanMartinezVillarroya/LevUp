@@ -732,6 +732,13 @@
   .video-link:hover{
     filter: brightness(0.98);
   }
+
+  .temario-cta{
+    margin-top: 18px;
+    display: flex;
+    justify-content: center;
+  }
+  
   
   
   /* =========================

@@ -11,11 +11,11 @@ function load(key, fallback){
   (() => {
     const domainKey = load("levup_selected_domain", "programacion");
     const domain = window.LEVUP_DATA.domains[domainKey];
+
+    document.getElementById("temarioTitle").textContent = domain.name;
   
-    // Evita duplicados: construimos el título aquí
-    document.getElementById("temarioTitle").textContent = `${domain.name} · Temario`;
-  
-    // La descripción puede venir del data.js
-    document.getElementById("temarioDesc").textContent = domain.temarioIntro?.desc || "Breve introducción del temario (demo).";
+    document.getElementById("temarioDesc").textContent =
+      domain.temarioIntro?.desc || "Breve introducción del contenido (demo).";
   })();
+  
   
