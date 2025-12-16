@@ -514,4 +514,165 @@
     .carousel-track{ min-height: 460px; }
     .slide-media{ height: 260px; }
   }
+
+  /* =========================
+   A) HABILIDADES - DOMINIOS (wireframe exacto)
+   ========================= */
+
+.page-title{
+    text-align:center;
+    padding: 70px 0 20px;
+  }
+  
+  .page-title h1{
+    margin: 0;
+    font-size: clamp(44px, 5.5vw, 70px);
+    font-weight: 800;
+    letter-spacing: -0.8px;
+  }
+  
+  .domain-list{
+    max-width: 620px;          /* en tu wireframe son cajas estrechas */
+    margin: 25px auto 0;
+    display: grid;
+    gap: 34px;                 /* mucho aire vertical */
+  }
+  
+  .domain-card{
+    width: 100%;
+    border: 1px solid rgba(0,0,0,.40);
+    background: #fff;
+    padding: 22px 22px 24px;
+    text-align: left;
+    cursor: pointer;
+  }
+  
+  .domain-card h3{
+    margin: 0 0 10px;
+    font-size: 18px;
+    font-weight: 800;
+  }
+  
+  .domain-card p{
+    margin: 0;
+    max-width: 520px;
+    opacity: .85;
+    font-size: 13px;
+    line-height: 1.55;
+  }
+  
+  .domain-card:hover{
+    background: rgba(0,0,0,.02);
+  }
+  
+  /* =========================
+   B) CARRUSEL (wireframe: 4 cards visibles)
+   ========================= */
+
+.learn-today{
+    margin-top: 95px;
+  }
+  
+  .learn-today-head{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+  }
+  
+  .learn-today-head h2{
+    margin: 0;
+    font-weight: 800;
+    letter-spacing: -0.7px;
+  }
+  
+  .carousel{
+    margin-top: 26px;
+    display: grid;
+    grid-template-columns: 1fr; /* en wireframe las flechas van abajo a la derecha */
+    gap: 14px;
+  }
+  
+  .carousel-arrow{
+    display: none; /* ocultamos las flechas laterales */
+  }
+  
+  .carousel-track{
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: calc((100% - 72px) / 4); /* 4 cards y 3 gaps de 24px => 72px */
+    gap: 24px;
+    align-items: start;
+    will-change: transform;
+    transition: transform .25s ease;
+  }
+  
+  .slide{
+    border: 0;
+    background: transparent;
+    text-align: left;
+    cursor: pointer;
+    padding: 0;
+  }
+  
+  .slide-media{
+    height: 380px;
+    border: 1px solid rgba(0,0,0,.35);
+    background: rgba(0,0,0,.12);
+  }
+  
+  .slide-text{ padding-top: 12px; }
+  .slide-kicker{ margin:0; font-weight:700; }
+  .slide-info{ margin:2px 0 0; opacity:.75; font-size:13px; }
+  .slide-topic{ margin:10px 0 0; font-weight:800; }
+  
+  .carousel-dots{
+    display:flex;
+    align-items: center;
+    gap: 8px;
+  }
+  
+  .dot{
+    width: 6px;
+    height: 6px;
+    border-radius: 999px;
+    background: rgba(0,0,0,.20);
+  }
+  .dot.is-active{ background: rgba(0,0,0,.75); }
+  
+  /* Controles abajo a la derecha (como tu wireframe) */
+  .carousel-controls{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 14px;
+  }
+  
+  .carousel-arrows-right{
+    display:flex;
+    gap: 10px;
+  }
+  
+  .circle-btn{
+    width: 44px;
+    height: 44px;
+    border-radius: 999px;
+    border: 1px solid rgba(0,0,0,.35);
+    background: #fff;
+    cursor: pointer;
+  }
+  
+  /* Responsive: 2 cards */
+  @media (max-width: 900px){
+    .carousel-track{
+      grid-auto-columns: calc((100% - 24px) / 2);
+    }
+  }
+  
+  /* Responsive: 1 card */
+  @media (max-width: 560px){
+    .carousel-track{
+      grid-auto-columns: 100%;
+    }
+  }
   
