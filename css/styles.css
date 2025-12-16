@@ -723,6 +723,16 @@
     font-size: 34px;
     color: rgba(255,255,255,.85);
   }
+
+  .video-link{
+    color: inherit;
+    text-decoration: none;
+    display: grid;
+  }
+  .video-link:hover{
+    filter: brightness(0.98);
+  }
+  
   
   /* =========================
    D) TEMARIOS (wireframe 2 columnas)
