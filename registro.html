@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <title>LevUp · Registro</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body class="auth-page">
+
+  <main class="auth-wrapper auth-wide">
+    <h1>Crea tu cuenta en LevUp</h1>
+    <p class="auth-lead">
+      Comienza tu viaje de aprendizaje con microlecciones inteligentes
+    </p>
+
+    <form class="auth-form">
+
+      <div class="grid-2">
+        <label>Nombre<input type="text"></label>
+        <label>Apellido<input type="text"></label>
+      </div>
+
+      <div class="grid-2">
+        <label>Correo<input type="email"></label>
+        <label>Teléfono<input type="tel"></label>
+      </div>
+
+      <label>
+        Selecciona tu área de interés
+        <select>
+          <option>Elige una categoría</option>
+          <option>Programación</option>
+          <option>Comunicación</option>
+          <option>Marketing</option>
+          <option>Creatividad</option>
+        </select>
+      </label>
+
+      <fieldset class="radio-group">
+        <legend>¿Cuál es tu perfil profesional?</legend>
+
+        <label><input type="radio" name="perfil"> Estudiante</label>
+        <label><input type="radio" name="perfil"> Profesional</label>
+        <label><input type="radio" name="perfil"> Emprendedor</label>
+        <label><input type="radio" name="perfil"> Freelancer</label>
+        <label><input type="radio" name="perfil"> Otro</label>
+        <label><input type="radio" name="perfil"> Diferente</label>
+      </fieldset>
+
+      <label>
+        Mensaje
+        <textarea placeholder="Escribe tu consulta aquí"></textarea>
+      </label>
+
+      <label class="checkbox">
+        <input type="checkbox"> Acepto términos y condiciones
+      </label>
+
+      <button class="btn-primary" type="submit">
+        Registrarme
+      </button>
+
+    </form>
+  </main>
+
+  <script>
+    // Demo PEC3
+    document.querySelector("form").addEventListener("submit", e => {
+      e.preventDefault();
+      window.location.href = "habilidades.html";
+    });
+  </script>
+
+</body>
+</html>
