@@ -1031,3 +1031,33 @@
     cursor: pointer;
   }
   
+  /* =========================
+   HEADER BUTTONS – tamaño unificado
+   ========================= */
+
+.header-actions a,
+.header-actions button{
+  min-height: 40px;
+  padding: 8px 18px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 1;
+  box-sizing: border-box;
+}
+
+/* Botón primario (negro) */
+.header-actions .btn-primary{
+  background: #000;
+  color: #fff;
+  border: 1px solid #000;
+}
+
+/* Botón secundario (borde) */
+.header-actions .btn-ghost{
+  background: transparent;
+  color: #000;
+  border: 1px solid #000;
+}
