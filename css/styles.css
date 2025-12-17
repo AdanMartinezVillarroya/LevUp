@@ -1061,3 +1061,33 @@
   color: #000;
   border: 1px solid #000;
 }
+
+/* =========================
+   FIX DEFINITIVO: botones header mismo tamaño
+   ========================= */
+
+   .site-header .header-actions .btn,
+   .site-header .header-actions a{
+     height: 44px !important;
+     min-width: 120px !important;   /* opcional, para que se vean iguales */
+     padding: 0 18px !important;
+     display: inline-flex !important;
+     align-items: center !important;
+     justify-content: center !important;
+     line-height: 44px !important;
+     box-sizing: border-box !important;
+   }
+   
+   /* Asegura que el borde no cambie dimensiones */
+   .site-header .header-actions .btn-ghost{
+     border: 1px solid #000 !important;
+     background: transparent !important;
+     color: #000 !important;
+   }
+   
+   .site-header .header-actions .btn-primary{
+     border: 1px solid #000 !important;
+     background: #000 !important;
+     color: #fff !important;
+   }
+   
