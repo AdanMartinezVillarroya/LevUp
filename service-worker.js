@@ -14,8 +14,9 @@ const ASSETS_TO_CACHE = [
   './js/habilidades.js',
   './js/progreso.js',
   './js/actividad.js',
-  './js/temarios.js'
-  // Añade aquí tus imágenes si quieres que carguen offline (ej: ./img/logo.png)
+  './js/temarios.js',
+  './icons/icon-192.png',
+  './icons/icon-512.png'
 ];
 
 // 1. Instalación: Guardamos los archivos en caché
