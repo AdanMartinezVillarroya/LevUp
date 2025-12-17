@@ -1091,3 +1091,17 @@
      color: #fff !important;
    }
    
+   /* FIX POR ID: mismo tamaño garantizado */
+#btnUsuario,
+#btnAbandonar{
+  width: 140px !important;
+  height: 44px !important;
+  padding: 0 !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  box-sizing: border-box !important;
+  line-height: 1 !important;
+  font-weight: 700 !important;
+  font-size: 13px !important;
+}
