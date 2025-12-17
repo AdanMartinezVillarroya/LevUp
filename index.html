@@ -18,13 +18,13 @@
       <a href="progreso.html">Progreso</a>
 
       <div class="dropdown">
-        <button class="dropdown-btn" type="button" aria-haspopup="true" aria-expanded="false">
-          Más <span aria-hidden="true">▾</span>
+        <button class="dropdown-btn" type="button">
+          Más <span>▾</span>
         </button>
-        <div class="dropdown-menu" role="menu">
-          <a role="menuitem" href="#features">Características</a>
-          <a role="menuitem" href="#limitless">Aprende sin límites</a>
-          <a role="menuitem" href="#subscribe">Suscripción</a>
+        <div class="dropdown-menu">
+          <a href="#features">Características</a>
+          <a href="#limitless">Aprende sin límites</a>
+          <a href="#subscribe">Suscripción</a>
         </div>
       </div>
     </nav>
@@ -36,7 +36,6 @@
   </header>
 
   <main>
-    <!-- HERO -->
     <section class="hero">
       <h1>Transforma tu aprendizaje<br/>con inteligencia artificial</h1>
 
@@ -50,12 +49,11 @@
         <a class="btn btn-ghost" href="habilidades.html">Explorar</a>
       </div>
 
-      <div class="hero-image" aria-label="Imagen destacada (placeholder)">
+      <div class="hero-image" aria-label="Imagen destacada">
         <div class="ph-image"></div>
       </div>
     </section>
 
-    <!-- CARACTERÍSTICAS (3 cards) -->
     <section class="section" id="features">
       <h2>Características que te impulsan</h2>
       <p class="section-lead">Diseñado para adaptarse a tu ritmo de aprendizaje</p>
@@ -82,7 +80,7 @@
         <article class="card">
           <div class="card-media"></div>
           <div class="card-body">
-            <h3>Aprendizaje adaptativo con inteligencia artificial</h3>
+            <h3>Aprendizaje adaptativo con IA</h3>
             <p>Contenido personalizado según tu progreso y estilo.</p>
             <a class="card-link" href="habilidades.html">Conocer más →</a>
           </div>
@@ -90,7 +88,6 @@
       </div>
     </section>
 
-    <!-- APRENDE SIN LÍMITES (2 cards anchas) -->
     <section class="section" id="limitless">
       <h2>Aprende sin límites</h2>
       <p class="section-lead">
@@ -100,7 +97,7 @@
       <div class="grid-2wide">
         <article class="wide-card">
           <div class="wide-card-text">
-            <h3>Aprende en cualquier momento y lugar</h3>
+            <h3>Aprende en cualquier momento</h3>
             <p>Contenido accesible desde tu dispositivo móvil.</p>
             <a class="card-link" href="habilidades.html">Ver más →</a>
           </div>
@@ -118,83 +115,36 @@
       </div>
     </section>
 
-    <!-- SUSCRIPCIÓN -->
     <section class="section" id="subscribe">
-      <h2>Mantente actualizado con LevUp</h2>
+      <h2>Mantente actualizado</h2>
       <p class="section-lead">
-        Recibe las últimas novedades, consejos de aprendizaje y actualizaciones directamente en tu bandeja de entrada
+        Recibe novedades y consejos directamente en tu bandeja de entrada
       </p>
 
-      <form class="subscribe" action="#" method="post">
+      <form class="subscribe">
         <input type="email" name="email" placeholder="Correo electrónico" required />
         <button class="btn btn-primary" type="submit">Suscribirse</button>
       </form>
 
       <p class="small-note">
-        Al suscribirte, aceptas nuestros términos y condiciones de privacidad.
+        Al suscribirte, aceptas nuestros términos y condiciones.
       </p>
-
-      <div class="subscribe-image" aria-label="Imagen suscripción (placeholder)">
-        <div class="ph-image"></div>
-      </div>
     </section>
   </main>
 
-  <!-- FOOTER (columnas como wireframe) -->
   <footer class="site-footer">
-    <div class="footer-cols">
+    <div class="footer-cols" style="grid-template-columns: repeat(2, 1fr); max-width: 600px;">
       <div>
-        <p class="footer-title">LevUp</p>
+        <p class="footer-title">Navegación</p>
         <a href="index.html">Inicio</a><br/>
         <a href="habilidades.html">Habilidades</a><br/>
-        <a href="#">Aprender</a><br/>
-        <a href="#">Recursos</a><br/>
-        <a href="#">Contacto</a>
-      </div>
-
-      <div>
-        <p class="footer-title">Empresa</p>
-        <a href="#">Nosotros</a><br/>
-        <a href="#">Carreras</a><br/>
-        <a href="#">Prensa</a><br/>
-        <a href="#">Blog</a><br/>
-        <a href="#">Comunidad</a>
-      </div>
-
-      <div>
-        <p class="footer-title">Soporte</p>
-        <a href="#">Centro de ayuda</a><br/>
-        <a href="#">Estado</a><br/>
-        <a href="#">Changelog</a><br/>
-        <a href="#">Documentación</a><br/>
-        <a href="#">Guías</a>
-      </div>
-
-      <div>
-        <p class="footer-title">Legal</p>
-        <a href="#">Términos</a><br/>
-        <a href="#">Privacidad</a><br/>
-        <a href="#">Cookies</a><br/>
-        <a href="#">Licencia</a><br/>
-        <a href="#">Seguridad</a>
+        <a href="progreso.html">Progreso</a>
       </div>
 
       <div>
         <p class="footer-title">Contacto</p>
-        <a href="#">Enviar mensaje</a><br/>
-        <a href="#">Soporte técnico</a><br/>
-        <a href="#">Preguntas frecuentes</a><br/>
-        <a href="#">Reportar problema</a><br/>
-        <a href="#">Sugerencias</a>
-      </div>
-
-      <div>
-        <p class="footer-title">Redes sociales</p>
-        <a href="#">Facebook</a><br/>
-        <a href="#">Twitter</a><br/>
-        <a href="#">Instagram</a><br/>
-        <a href="#">LinkedIn</a><br/>
-        <a href="#">YouTube</a>
+        <a href="#" style="opacity: 0.5; cursor: default;">soporte@levup.com</a><br/>
+        <span class="small-note">Proyecto Académico LevUp</span>
       </div>
     </div>
 

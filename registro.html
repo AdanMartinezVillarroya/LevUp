@@ -15,22 +15,22 @@
       Comienza tu viaje de aprendizaje con microlecciones inteligentes
     </p>
 
-    <form class="auth-form">
+    <form class="auth-form" id="registerForm">
 
       <div class="grid-2">
-        <label>Nombre<input type="text"></label>
-        <label>Apellido<input type="text"></label>
+        <label>Nombre<input type="text" required></label>
+        <label>Apellido<input type="text" required></label>
       </div>
 
       <div class="grid-2">
-        <label>Correo<input type="email"></label>
+        <label>Correo<input type="email" required></label>
         <label>Teléfono<input type="tel"></label>
       </div>
 
       <label>
         Selecciona tu área de interés
         <select>
-          <option>Elige una categoría</option>
+          <option value="">Elige una categoría</option>
           <option>Programación</option>
           <option>Comunicación</option>
           <option>Marketing</option>
@@ -40,13 +40,10 @@
 
       <fieldset class="radio-group">
         <legend>¿Cuál es tu perfil profesional?</legend>
-
-        <label><input type="radio" name="perfil"> Estudiante</label>
-        <label><input type="radio" name="perfil"> Profesional</label>
-        <label><input type="radio" name="perfil"> Emprendedor</label>
-        <label><input type="radio" name="perfil"> Freelancer</label>
-        <label><input type="radio" name="perfil"> Otro</label>
-        <label><input type="radio" name="perfil"> Diferente</label>
+        <label><input type="radio" name="perfil" value="estudiante"> Estudiante</label>
+        <label><input type="radio" name="perfil" value="profesional"> Profesional</label>
+        <label><input type="radio" name="perfil" value="emprendedor"> Emprendedor</label>
+        <label><input type="radio" name="perfil" value="freelance"> Freelancer</label>
       </fieldset>
 
       <label>
@@ -55,23 +52,17 @@
       </label>
 
       <label class="checkbox">
-        <input type="checkbox"> Acepto términos y condiciones
+        <input type="checkbox" required> Acepto términos y condiciones
       </label>
 
-      <button class="btn btn-primary" type="submit">
+      <button class="btn-primary" type="submit">
         Registrarme
       </button>
 
     </form>
   </main>
 
-  <script>
-    // Demo PEC3
-    document.querySelector("form").addEventListener("submit", e => {
-      e.preventDefault();
-      window.location.href = "habilidades.html";
-    });
-  </script>
+  <script src="js/app.js"></script>
 
 </body>
 </html>
