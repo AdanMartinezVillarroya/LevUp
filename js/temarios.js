@@ -1,6 +1,5 @@
-// ==================================
-// LevUp - Temarios (lista y selección)
-// ==================================
+// Temarios (lista y selección)
+
 function save(key, value){ localStorage.setItem(key, JSON.stringify(value)); }
 function load(key, fallback){
   const raw = localStorage.getItem(key);
@@ -42,7 +41,7 @@ function load(key, fallback){
   // Estado inicial
   list.querySelector(".tema-item")?.classList.add("is-active");
 
-  // Comenzar → actividad
+  // Comenzar actividad
   btn.addEventListener("click", (e) => {
     // enlace normal a actividad.html
   });

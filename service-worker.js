@@ -19,7 +19,7 @@ const ASSETS_TO_CACHE = [
   './icons/icon-512.png'
 ];
 
-// 1. Instalación: Guardamos los archivos en caché
+// Instalación
 self.addEventListener('install', (e) => {
   e.waitUntil(
     caches.open(CACHE_NAME).then((cache) => {
@@ -28,7 +28,7 @@ self.addEventListener('install', (e) => {
   );
 });
 
-// 2. Activación: Limpiamos cachés antiguas si actualizas la versión
+// Activación
 self.addEventListener('activate', (e) => {
   e.waitUntil(
     caches.keys().then((keyList) => {
@@ -41,7 +41,7 @@ self.addEventListener('activate', (e) => {
   );
 });
 
-// 3. Interceptamos peticiones: "Cache First" (Si está guardado, úsalo; si no, ve a internet)
+// Interceptamos peticiones
 self.addEventListener('fetch', (e) => {
   e.respondWith(
     caches.match(e.request).then((response) => {

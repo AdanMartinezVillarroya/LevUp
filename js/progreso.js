@@ -1,3 +1,5 @@
+// Progreso
+
 function load(key, fallback){
     const raw = localStorage.getItem(key);
     if(!raw) return fallback;

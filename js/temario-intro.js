@@ -1,6 +1,4 @@
-// ==================================
-// LevUp - Temario intro
-// ==================================
+// Intro temario
 
 function load(key, fallback){
     const raw = localStorage.getItem(key);

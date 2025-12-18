@@ -1,24 +1,20 @@
-// ==========================================
-// LevUp - Lógica General (Auth, Footer, UI)
-// ==========================================
+// Lógica General
 
 document.addEventListener("DOMContentLoaded", () => {
   
-    // 1. AÑO DINÁMICO (Footer)
+    // 1. AÑO DINÁMICO 
     const yearEl = document.getElementById("year");
     if (yearEl) yearEl.textContent = new Date().getFullYear();
   
-    // 2. MANEJO DE ENLACES "MUERTOS" (Footer y Menús)
-    // Evita el salto de página en enlaces con href="#"
+    // 2. ENLACES MUERTOS 
     const deadLinks = document.querySelectorAll('a[href="#"], a[href=""]');
     deadLinks.forEach(link => {
       link.addEventListener("click", (e) => {
         e.preventDefault();
-        // Opcional: console.log("Enlace desactivado en demo");
       });
     });
   
-    // 3. SIMULACIÓN DE SUSCRIPCIÓN (Index)
+    // 3. SIMULACIÓN DE SUSCRIPCIÓN 
     const subForm = document.querySelector(".subscribe");
     if (subForm) {
       subForm.addEventListener("submit", (e) => {
@@ -31,7 +27,7 @@ document.addEventListener("DOMContentLoaded", () => {
       });
     }
   
-    // 4. LÓGICA DE LOGIN (Para iniciar-sesion.html)
+    // 4. LÓGICA DE LOGIN 
     const loginForm = document.getElementById("loginForm");
     if (loginForm) {
       loginForm.addEventListener("submit", (e) => {
@@ -41,7 +37,7 @@ document.addEventListener("DOMContentLoaded", () => {
         const passField = loginForm.querySelector('input[type="password"]');
   
         if (emailField.value && passField.value) {
-          // Guardamos usuario en localStorage para simular sesión
+          // Usuario en localStorage para simular sesión
           localStorage.setItem("levup_user", emailField.value);
           
           alert("Has iniciado sesión correctamente.");
@@ -53,7 +49,7 @@ document.addEventListener("DOMContentLoaded", () => {
       });
     }
   
-    // 5. LÓGICA DE REGISTRO (Para registro.html)
+    // 5. LÓGICA DE REGISTRO 
     const registerForm = document.getElementById("registerForm");
     if (registerForm) {
       registerForm.addEventListener("submit", (e) => {
@@ -62,7 +58,7 @@ document.addEventListener("DOMContentLoaded", () => {
         // Simulación de validación simple
         const inputs = registerForm.querySelectorAll("input");
         let isValid = true;
-        // Revisamos que los campos de texto no estén vacíos
+        // Revisar que campos de texto no estén vacíos
         inputs.forEach(i => { 
             if(i.type !== "checkbox" && i.type !== "radio" && i.value.trim() === "") {
                 isValid = false; 
@@ -81,9 +77,7 @@ document.addEventListener("DOMContentLoaded", () => {
   
   });
 
-  // ==========================================
 // REGISTRO PWA (Service Worker)
-// ==========================================
 if ('serviceWorker' in navigator) {
     window.addEventListener('load', () => {
       navigator.serviceWorker.register('./service-worker.js')

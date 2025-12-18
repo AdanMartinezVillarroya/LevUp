@@ -1,4 +1,4 @@
-// Datos demo (PEC3): catálogo mínimo para demostrar flujo funcional
+// Datos demo
 
 window.LEVUP_DATA = {
     domains: {

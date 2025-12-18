@@ -1,6 +1,5 @@
-// ==================================
 // LevUp - Actividad (validación + progreso)
-// ==================================
+
 function save(key, value){ localStorage.setItem(key, JSON.stringify(value)); }
 function load(key, fallback){
   const raw = localStorage.getItem(key);
@@ -23,7 +22,7 @@ function setStats(s){
   const domain = window.LEVUP_DATA.domains[domainKey];
   const activity = domain.actividad;
 
-  // Pinta actividad
+  // Actividad
   document.getElementById("actTitle").textContent = activity.title;
   document.getElementById("actEnunciado").textContent = activity.enunciado;
 
@@ -63,7 +62,7 @@ function setStats(s){
       feedbackEl.textContent = "Correcto. " + picked.why;
       feedbackEl.className = "feedback is-ok";
 
-      // Actualiza progreso (demo)
+      // Actualizar progreso 
       const stats = getStats();
       stats.studyMinutes += 5;
       stats.modulesDone += 1;

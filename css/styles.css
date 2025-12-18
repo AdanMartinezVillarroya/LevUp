@@ -95,9 +95,7 @@
     background: rgba(0,0,0,.04);
   }
   
-  /* =========================
-     Buttons (GLOBAL, tamaño unificado)
-     ========================= */
+  /* Buttons */
   .btn{
     height: 44px;
     min-width: 120px;
@@ -131,7 +129,7 @@
     border: 1px solid #000;
   }
   
-  /* Hero (1 columna, imagen grande debajo) */
+  /* Hero */
   .hero{
     text-align: center;
     padding: 24px 0 10px;
@@ -168,7 +166,7 @@
     background: rgba(0,0,0,.08);
   }
   
-  /* Cards */
+  /* Cartas */
   .grid-3{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -270,9 +268,7 @@
     .nav{ display:none; }
   }
   
-  /* =========================
-     HABILIDADES + CARRUSEL
-     ========================= */
+  /* HABILIDADES */
   
   .page-title{
     text-align:center;
@@ -320,9 +316,7 @@
     background: rgba(0,0,0,.02);
   }
   
-  /* =========================
-     B) CARRUSEL (wireframe: 4 cards visibles)
-     ========================= */
+  /* CARRUSEL */
   
   .learn-today{
     margin-top: 95px;
@@ -428,9 +422,7 @@
     }
   }
   
-  /* =========================
-     C) TEMARIO INTRO (wireframe)
-     ========================= */
+  /* TEMARIO INTRO */
   
   .temario-intro{
     margin-top: 50px;
@@ -482,9 +474,7 @@
     justify-content: center;
   }
   
-  /* =========================
-     D) TEMARIOS (wireframe 2 columnas)
-     ========================= */
+  /* TEMARIOS */
   
   .temarios-layout{
     margin-top: 34px;
@@ -541,9 +531,7 @@
     .temarios-left{ border-right: none; border-bottom: 1px solid rgba(0,0,0,.40); }
   }
   
-  /* =========================
-     E) ACTIVIDAD (wireframe exacto)
-     ========================= */
+  /* ACTIVIDAD */
   
   .actividad-layout{
     margin-top: 60px;
@@ -618,9 +606,7 @@
     }
   }
   
-  /* =========================
-     F) PROGRESO (wireframe exacto)
-     ========================= */
+  /* PROGRESO */
   
   .progreso-layout{
     margin-top: 55px;
@@ -677,9 +663,7 @@
     }
   }
   
-  /* =========================
-     AUTH WIREFRAME (login / registro)
-     ========================= */
+  /* LOGIN Y REGISTRO */
   
   .auth-page{
     min-height: 100vh;
@@ -759,14 +743,11 @@
     gap: 8px;
   }
   
-  /* Solo el margen del botón en auth, sin pisar el header */
   .auth-page .auth-form .btn-primary{
     margin: 20px auto 0;
   }
 
-/* =========================================
-   AÑADIDO: Mejoras UX para enlaces vacíos
-   ========================================= */
+/* ENLACES VACÍOS */
 a[href="#"] {
     cursor: default;
     opacity: 0.5 !important;
@@ -777,16 +758,12 @@ a[href="#"]:hover {
     opacity: 0.5 !important;
 }
 
-/* =========================================
-   MEJORAS VISUALES (POLISH)
-   ========================================= */
+/* MEJORAS VISUALES */
 
-/* 1. Suavizar todas las interacciones */
 a, .btn, .card, .domain-card, .answer-card, .tema-item {
     transition: all 0.25s ease-in-out;
 }
 
-/* 2. Botones más interactivos */
 .btn:hover {
     transform: translateY(-2px); /* Pequeño salto al pasar el ratón */
     box-shadow: 0 4px 12px rgba(0,0,0,0.15);
@@ -796,7 +773,6 @@ a, .btn, .card, .domain-card, .answer-card, .tema-item {
     transform: translateY(0);
 }
 
-/* 3. Inputs (Formularios) más bonitos al escribir */
 input:focus, select:focus, textarea:focus {
     outline: none;
     border-color: #000;
@@ -804,14 +780,12 @@ input:focus, select:focus, textarea:focus {
     background: #fafafa;
 }
 
-/* 4. Tarjetas con efecto de elevación */
 .card:hover, .wide-card:hover, .domain-card:hover {
     border-color: #000;
     box-shadow: 0 8px 24px rgba(0,0,0,0.12);
     transform: translateY(-4px);
 }
 
-/* 5. Mejora en la navegación */
 .nav a {
     position: relative;
 }
@@ -829,10 +803,9 @@ input:focus, select:focus, textarea:focus {
 
 .nav a:hover::after,
 .nav a.is-active::after {
-    width: 100%; /* Subrayado animado */
+    width: 100%; 
 }
 
-/* 6. Feedback visual en respuestas (Actividad) */
 .answer-card:hover {
     background-color: #fafafa;
     border-color: #666;

@@ -1,6 +1,4 @@
-// ==================================
-// LevUp - Habilidades (dominio + carrusel por páginas)
-// ==================================
+// Habilidades (dominio y carrusel por páginas)
 
 const STORAGE_KEYS = {
     domain: "levup_selected_domain",
@@ -36,7 +34,7 @@ const STORAGE_KEYS = {
     const domain = window.LEVUP_DATA.domains[domainKey];
     const items = domain.capsules;
   
-    // Render cards (todas)
+    // Render cartas 
     items.forEach((c) => {
       const card = document.createElement("button");
       card.className = "slide";
@@ -87,8 +85,7 @@ const STORAGE_KEYS = {
     const clamped = Math.max(0, Math.min(pageIndex, pages - 1));
     track.dataset.page = String(clamped);
   
-    // Mueve el track con translateX por páginas
-    const gap = 24; // debe coincidir con CSS (ver abajo)
+    const gap = 24; 
     const cardWidth = track.clientWidth / pageSize;
     const offset = clamped * (pageSize * (cardWidth + gap));
   
